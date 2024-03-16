@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #FFB900;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -36,6 +40,10 @@ a {
     background: #171100;
     border-radius: 999px;
 
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 /* ====Header========= */
@@ -99,4 +107,226 @@ a {
 
 .header .action {
     margin-left: 49px;
+}
+
+/* ======== HERO ====================*/
+.hero {
+    padding: 56px 0 65px;
+    background: #FFFCF4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .hero-img {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero .hero-summary {
+    padding: 28px 24px;
+    position: absolute;
+    width: 270px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    bottom: 48px;
+    right: 0;
+
+}
+
+.hero .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero .item+.item {
+    margin-top: 22px;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #FFF9E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-summary .info {
+    margin-left: 16px;
+
+}
+
+.hero-summary .label {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.hero-summary .title {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.content-block .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.content-block .desc {
+    margin-top: 22px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.content-block .cta-group {
+    margin: 38px 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.content-block .hero-btn {
+    min-width: 180px;
+    line-height: 64px;
+    background: var(--primary-color);
+}
+
+.content-block .watch-video {
+    display: flex;
+    margin-left: 28px;
+    border: none;
+    background-color: #FFFCF4;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-block .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-block .watch-video-label {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.stats strong {
+    padding-left: 28px;
+    padding-right: 8px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.22;
+    /* 122.727% */
+}
+
+.content-block .stats {
+    margin-left: -28px;
+}
+
+/* ====== Popular============= */
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26;
+    /* 126.316% */
+    letter-spacing: -0.76px;
+
+}
+
+.popular .desc {
+    max-width: 458px;
+    margin-top: 16px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .control {
+    display: flex;
+}
+
+.popular .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    margin-left: 18px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.popular .control-btn:hover {
+    background-color: var(--primary-color);
 }
