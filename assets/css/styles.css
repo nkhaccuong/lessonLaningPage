@@ -44,6 +44,7 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 /* ====Header========= */
@@ -329,4 +330,364 @@ a {
 
 .popular .control-btn:hover {
     background-color: var(--primary-color);
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.popular .course-item .thumb {
+    margin: -1px;
+    width: calc(100% + 2px);
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .info {
+    padding: 16px 22px 22px 22px;
+
+
+}
+
+.popular .foot,
+.popular .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .course-item .title {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.7;
+    /* 166.667% */
+}
+
+.popular .course-item .value {
+    color: #FEA31B;
+
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 175% */
+}
+
+.popular .course-item .desc {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.popular .foot {
+    margin-top: 12px;
+}
+
+.popular .foot .price {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.7;
+    /* 166.667% */
+}
+
+.popular .foot .btn-book {
+    border: none;
+}
+
+.popular .foot .btn-book:hover {
+    background-color: var(--primary-color);
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+/* ========Feedback================================== */
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+
+.feedback .feedback-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .avt {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .feedback-item .title {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41;
+    /* 141.667% */
+}
+
+.feedback .feedback-item .desc {
+    color: #BFBCB2;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.feedback .feedback-desc {
+    width: 63%;
+}
+
+.feedback blockquote {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53;
+    /* 153.846% */
+}
+
+.feedback .dots {
+    margin-top: 28px;
+}
+
+.feedback .dots span {
+    width: 6px;
+    height: 6px;
+}
+
+/* ============Features================= */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .img {
+    display: flex;
+    gap: 0 30px;
+
+}
+
+.features .img img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features .img .first-img {
+    margin-top: 34px;
+}
+
+.features .info {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.features .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26;
+    /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.features .info .desc {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 175% */
+}
+
+.features .features-btn {
+    margin-top: 32px;
+    width: 137px;
+    background-color: var(--primary-color);
+}
+
+.features-2 {
+    margin-top: 70px;
+}
+
+.features-2 .body {
+    flex-direction: row-reverse;
+}
+
+.features-2 .info {
+    width: 49%;
+}
+
+.features-2 .img img {
+    width: 470px;
+    height: 440px;
+}
+
+/* ===============Blog==================== */
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background-color: #FFFCF4;
+}
+
+.blog .heading {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
+.blog .desc {
+    width: 448px;
+    color: #696262;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-left: auto;
+    margin-right: auto;
+    /* 175% */
+}
+
+.blog .blog-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 0 30px;
+}
+
+.blog .blog-item {
+    width: 33.33%;
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.blog .blog-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .info {
+    padding: 28px 20px;
+}
+
+.blog .date {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.blog .date::before {
+    display: inline-block;
+    margin-right: 4px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.blog .date::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+}
+
+.blog .blog-item .title {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    /* 175% */
+}
+
+.blog .blog-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+
+    /* 185.714% */
+}
+
+.blog .blog-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.blog .blog-item:hover {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
